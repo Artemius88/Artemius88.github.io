@@ -1,0 +1,118 @@
+@media (max-width: 450px) {
+	body {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		font-family: risque;
+	}
+	.header {
+		position: fixed;
+		width: 100%;
+		padding: 26px;
+	}
+	.nav-menu {
+		display: none;
+	}
+	.snowspin {
+		display: none;
+	}
+	#main-pg {
+		position: relative;
+		min-height: 805px;
+		background: url(images/santa.png) bottom left -20% / 100% auto no-repeat;
+	}
+	.scroll-arrow {
+		display: none;
+	}
+	#main-pg .wrapper {
+		width: 100%;
+		max-height: 24%;
+		top: 27%;
+	}
+	.main-title {
+		font-size: 52px;
+		line-height: 60px;
+	}
+	.subtitle-main {
+		font-size: 28px;
+		line-height: 32px;
+		margin-bottom: 43px;
+	}
+	.call-to-action {
+		margin: 0 auto;
+	}
+	.cloud-wrapper {
+		display: none;
+	}
+	
+	.burger-active-menu {
+		width: 100%;
+		height: 805px;
+		position: fixed;
+		right: -100%;
+		top: 0;
+	}
+	.burger-active-menu-slide {
+		transform: translateX(-100%);
+	}
+
+		/*SECTION 2 PRODUCT-PAGE*/
+
+	#prod-page {
+		left: 0;
+		right: 0;
+		width: 100%;
+		max-height: 1239px;
+		background: url(images/pg2adaptive.png) no-repeat;
+		
+	}
+	.products-page .wrapper {
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.images-container {
+		width: 110%;
+		display: flex;
+	}
+	.image {
+		width: 25%;
+		max-height: 111px;		
+	}
+	.image img {
+		width: 60%;
+		height: auto;
+	}
+	.detail-window {
+		width: 77%;
+		border: none;
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.zoomed-image {
+		max-height: 240px;
+		max-width: 240px;
+	}
+
+		/*PAGE 3 CONTACTS*/
+
+	#cont-page {
+		width: 100%;
+		min-height: 800px;
+		background: url(images/pg3adaptive.png) no-repeat;
+	}
+	.form-wrapper {
+		width: 100%;
+		margin-bottom: 80px;
+	}
+	.form-container {
+		flex-direction: column;
+	}
+	.form-input, .gender-select, .form-input-textarea {
+		width: 88%;
+	}
+}
+
