@@ -1,2 +1,2 @@
-# Artemius88.github.io
+# artemius88.github.io
 My first hosting
