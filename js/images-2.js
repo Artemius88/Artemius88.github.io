@@ -6,7 +6,7 @@ var productDescription = [
   {'url': 'images/bag-3.png', 'title': 'prod-title-3', 'description': 'Regular BAG have no present inside Lorem Ipsum is simply dumm y text of the printing and types etting industry. Lorem'}
 ]
 
-const imageTemplate = ({ url, title, description }) => `
+const imageTemplate = ({ url}) => `
   <div class="image">
   	<img src="${url}" />
   </div>
@@ -25,14 +25,22 @@ const detailsTemplate = ({ url, title, description }) => `
 
 $('.images-container').html(productDescription.map(imageTemplate).join(''));
 
+// var htmlContent = '';
+// for (i=0; i < productDescription.length; i++) {
+//   var content = imageTemplate(productDescription[i]);
+//   htmlContent += content;
+// }
+// $('.images-container').html(htmlContent);
+
+
 $('.image').on('click', function() {
-  var index = $('.image').index(this);
+	var index = $('.image').index(this);
   $('.desc-wrap').html(detailsTemplate(productDescription[index]));
   $('.desc-wrap').animate({right: '-=1000'}, 0, function () {
     $('.desc-wrap').animate({right: '+=1000'}, 500)
   });
-    $('.image').removeClass('chosen-image');
-    $(this).addClass('chosen-image');
+  	$('.image').removeClass('chosen-image');
+		$(this).addClass('chosen-image');
 })
 
 
