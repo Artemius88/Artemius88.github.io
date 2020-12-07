@@ -391,7 +391,7 @@ section {
 
 
 .chosen-image {
-	box-sizing: content-box;
+	box-sizing: border-box;
 	width: 150px;
 	height: 150px;
 	border-radius: 50%;
