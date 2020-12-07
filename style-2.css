@@ -57,6 +57,7 @@ body {
 	cursor: pointer;
 	display: block;
 	overflow: hidden;
+	height: 19px;
 	max-height: 19px;
 }
 .nav-menu-item a span {
@@ -64,12 +65,14 @@ body {
 	transform: none;
     transition: transform .3s ease;
 }
-
-.nav-menu-item a .accent {
+.shown-item {
+	display: block;	
+}
+.nav-menu-item .accent {
 	color: #D02B2B;
 	font-weight: 600;
 }
-.nav-menu-item a:hover span {
+.nav-menu-item a:hover .shown-item, .accent {
 	transform: translateY(-19px);	
 }
 .burger {
@@ -153,7 +156,7 @@ body {
 
 }
 section {
-	min-height: 695px;
+	min-height: 100vh;
 }
 
 /*ROUND-BURGER*/
@@ -400,15 +403,20 @@ section {
 	transition-duration: 0.5s;
 }
 .detail-window {
-	min-width: 38%;
-	min-height: 54%;
+	min-width: 38vw;
+	min-height: 34%;
+	overflow: hidden;
+	border: 3px solid #FFFFFF;
+	border-radius: 20px;
+}
+.desc-wrap {
 	display: flex;
 	align-items: center;
 	padding: 55px 36px 36px 33px;
-	border: 3px solid #FFFFFF;
-	border-radius: 20px;
-	
+	position: relative;
+	/*transform: translateX(1000px);*/
 }
+
 .text-block {
 	max-width: 280px;
 	color: #FFFFFF;
@@ -434,6 +442,7 @@ section {
 /*PAGE 3 CONTACTS*/
 .contacts-page {
 	width: 100%;
+	height: 755px;
 	position: relative;
 	background: url(images/background-page-3.png) center / 100% 118% no-repeat;
 
@@ -497,18 +506,28 @@ section {
 	border-bottom: 2px solid #FFFFFF;
 	transform: rotate(-45deg);
 }
+
+
+} 
 .drop-container {
 	box-sizing: border-box;
-	width: 47%;	
+	width: 47%;
+	background-color: white;
 	border: 3px solid #fff;
 	border-radius: 15px;
 }
 .gender-option {
+	box-sizing: border-box;
 	height: 51px;
 	padding-top: 16px;
+	
 	cursor: pointer;
 }
+.chosen-gender {
+	
+}
 .gender-header {
+	
 	background: rgba(0, 0, 0, 0);
 	border-radius: 15px;
 }
