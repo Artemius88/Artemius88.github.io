@@ -98,68 +98,47 @@
 					</div>
 				</div>
 				<div class="detail-window">
-					<!-- <div class="swiper-container"> -->
-						<!-- <div class="swiper-wrapper">
-							<div class="swiper-slide"> -->
-								<div class="desc-wrap">
-									<div class="text-block">
-										<span class="window-header">Best sock ever</span>
-										<p id="desc" class="product-description">Regular SOCK have no present inside Lorem Ipsum is simply dumm y text of the printing and types etting industry. Lorem</p>
-									</div>
-									<div class="zoomed-image">
-										<img src="images/sock-1.png" width="140" height="auto" alt="sock">
-									</div>
-								</div>	
-						<!-- 	</div>	
-							<div class="swiper-slide">	
-									<div class="text-block">
-										<span class="window-header">Best HAT ever</span>
-										<p id="desc" class="product-description">Regular SOCK have no present inside Lorem HAT Ipsum is simply dumm y text of the printing and types etting industry. Lorem</p>
-									</div>
-									<div class="zoomed-image">
-										<img src="images/sock-1.png" width="140" height="auto" alt="sock">
-									</div>
-							</div>	
-							<div class="swiper-slide">			
-									<div class="text-block">
-										<span class="window-header">Best BAG ever</span>
-										<p id="desc" class="product-description">Regular SOCK have no present inside Lorem BAG Ipsum is simply dumm y text of the printing and types etting industry. Lorem</p>
-									</div>
-									<div class="zoomed-image">
-										<img src="images/sock-1.png" width="140" height="auto" alt="sock">
-									</div>
-							</div>		
+					<div class="desc-wrap">
+						<div class="text-block">
+							<span class="window-header">Best sock ever</span>
+							<p id="desc" class="product-description">Regular SOCK have no present inside Lorem Ipsum is simply dumm y text of the printing and types etting industry. Lorem</p>
+						</div>
+						<div class="zoomed-image">
+							<img src="images/sock-1.png" width="140" height="auto" alt="sock">
+						</div>
 					</div>
-					<div class="swiper-pagination"></div>
-				</div> -->
-				<!-- </div> -->
-			<!-- </div> -->
+				</div>
+			</div>
 		</div>	
 	</section>
 	<section class="contacts-page section" id="cont-page">		
 		<div id="snowZone">
 			<div class="form-wrapper">
-			<span class="contacts-header">Write us<br> for real presents</span>
-			<form class="form-container">
-				<input type="text" id=name name="name" placeholder="Name" class="form-input text-active">
-				<input type="text" id="phone" name="phone" placeholder="Phone" class="form-input text-active">			
-				
-				<div class="drop-container text-active form-input">
-					<div class="gender-header gender-option">Gender</div>
-					<div class="gender-option boy select-gender" data-value="Boy">Boy</div>
-					<div class="gender-option girl select-gender" data-value="Girl">Girl</div>
+				<span class="contacts-header">
+					Write us<br> for real presents
+				</span>
+				<form class="form-container">
+					<input type="text" id=name name="name" placeholder="Name" class="form-input text-active">
+					<input type="text" id="phone" name="phone" placeholder="Phone" class="form-input text-active">			
+					
+					<div class="drop-container text-active form-input">
+					<!-- 	<div class="gender-header gender-option">Gender</div>
+						<div class="gender-option boy select-gender" data-value="Boy">Boy</div>
+						<div class="gender-option girl select-gender" data-value="Girl">Girl</div> -->
+					</div>
+					
+					<input type="text" name="email" id="email" placeholder="Email" class="form-input text-active">
+				</form>
+				<textarea name="your-wish" placeholder="Your wish" class="form-input-textarea text-active">
+				</textarea>
+				<div class="checkboxer">
+					<input type="checkbox" name="present" id="present-checkbox" checked>
+					<label for="present-checkbox" class="checkbox-label">
+						Want Coca-cola with present?
+					</label>
 				</div>
-				
-				<input type="text" name="email" id="email" placeholder="Email" class="form-input text-active">
-			</form>
-			<textarea name="your-wish" placeholder="Your wish" class="form-input-textarea text-active">
-			</textarea>
-			<div class="checkboxer">
-				<input type="checkbox" name="present" id="present-checkbox" checked>
-				<label for="present-checkbox" class="checkbox-label">Want Coca-cola with present?</label>
-			</div>
+			</div>	
 		</div>
-
 	</section>
 <!-- </div> -->
     <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
@@ -169,19 +148,6 @@
   	<script src="js/images-2.js"></script>
   	<script src="js/fallingsnow.js"></script>
   	<script src="js/stars.js"></script>
-  	<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  	<script>
-		var swiper = new Swiper('.swiper-container', {
-        direction: 'horizontal',
-        slidesPerView: 1,
-        spaceBetween: 30,
-        mousewheel: true,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-    });
-	</script> -->
   	<!-- <script>
   		$(document).ready(function() {
     $('#fullpage').fullpage();
