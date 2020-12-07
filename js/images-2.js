@@ -26,10 +26,13 @@ const detailsTemplate = ({ url, title, description }) => `
 $('.images-container').html(productDescription.map(imageTemplate).join(''));
 
 $('.image').on('click', function() {
-	var index = $('.image').index(this);
-  $('.detail-window').html(detailsTemplate(productDescription[index]));
-  	$('.image').removeClass('chosen-image');
-		$(this).addClass('chosen-image');
+  var index = $('.image').index(this);
+  $('.desc-wrap').html(detailsTemplate(productDescription[index]));
+  $('.desc-wrap').animate({right: '-=1000'}, 0, function () {
+    $('.desc-wrap').animate({right: '+=1000'}, 500)
+  });
+    $('.image').removeClass('chosen-image');
+    $(this).addClass('chosen-image');
 })
 
 
