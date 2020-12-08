@@ -52,6 +52,9 @@
 	</div>
 
 <!-- <div id="fullpage"> -->
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
 	<section class="main-page section" id="main-pg">		
 			<div id="snowZone">
 				<div id="star" class="star">
@@ -67,22 +70,31 @@
 						<div class="call-to-action text-active">Call to action</div>
 					</div>
 				</div>
-				<div class="cloud-wrapper">
-					<div class="triangle">
-						<div class="shadow-line"></div>
-					</div>
-					<div class="oval">
-					<span>
-						How how how!!!<br>
-						Like it?<br>
-						Scroll down for more!	
-					</span>
-					</div>
-				</div>
+				
+				
+						<div class="cloud-wrapper">
+							<div class="triangle">
+								<div class="shadow-line"></div>
+							</div>
+							<div class="oval">
+							<span>
+								How how how!!!<br>
+								Like it?<br>
+								Scroll down for more!	
+							</span>
+							</div>
+						</div>
+					
+
+					
+				<!-- </div> -->
 				<div class="snowspin rotate"><img src="images/snow-2.png" width="412" height="412"></div>
 				<a href="#cont-page" class="scroll-arrow"><img src="icons/arrow-down-solid.svg" width="34" height="34"></a>	
 			</div>
 	</section>
+</div>
+
+<div class="swiper-slide">
 
 	<section class="products-page section" id="prod-page">
 		
@@ -111,6 +123,9 @@
 			</div>
 		</div>	
 	</section>
+</div>
+
+<div class="swiper-slide">
 	<section class="contacts-page section" id="cont-page">		
 		<div id="snowZone">
 			<div class="form-wrapper">
@@ -140,6 +155,11 @@
 			</div>	
 		</div>
 	</section>
+</div>
+</div>
+	<!-- Add Pagination -->
+		<div class="swiper-pagination"></div>
+</div>
 <!-- </div> -->
     <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
@@ -153,4 +173,19 @@
     $('#fullpage').fullpage();
 }); 
   	</script> -->
+  	<!-- Initialize Swiper -->
+  		<!-- Swiper JS -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        slidesPerView: 1,
+        spaceBetween: 30,
+        mousewheel: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+    });
+	</script>
 </body>
