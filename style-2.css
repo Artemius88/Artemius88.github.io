@@ -124,7 +124,7 @@ body {
 	position: absolute;
 	background-color: #D02B2B;
 	width: 643px;
-	height: 755px;
+	height: calc(100vh + 33px);
 	top: -33px;
 	right: -643px;
 	display: flex;
@@ -150,10 +150,10 @@ body {
 .slide-out-menu {
 	transform: translateX(-600px);
 	transition-duration: 1s;
-
 }
 section {
-	min-height: 695px;
+	height: 100vh;
+
 }
 
 /*ROUND-BURGER*/
@@ -203,7 +203,7 @@ section {
 	border-radius: 50%;
 	top:0px;
     left:0px;
-    position:absolute;
+    position: absolute;
     z-index: 100;
 }
 .star {
@@ -223,7 +223,7 @@ section {
 }
 .main-page {
 	position: relative;
-	
+	height: 100vh;
 	width: 100%;
 	background: url(images/santa.png) bottom right / 61% auto no-repeat;
 	
@@ -261,16 +261,36 @@ section {
 	color: #000;
 	mix-blend-mode: multiply;
 }
+
+/*.santa-cloud {
+	position: relative;
+	margin-top: auto;
+	margin-left: auto;
+	display: block;
+	height: 77%;
+	width: 61%;
+
+}
+.santa-cloud img {
+	position: absolute;
+
+}*/
+
+/*.corner-wrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}*/
 .cloud-wrapper {
 	position: absolute;
-	top: 270px;
-	left: 45%;
+	bottom: 35%;
+	right: 38%;
 	z-index: 0;
 }
 .oval {
-	position: relative;
-	width: 223px;
-	height: 166px;
+	/*position: relative;*/
+	min-width: 223px;
+	min-height: 166px;
 	background-color: #FFFFFF;
 	border-radius: 50%;
 	display: flex;
@@ -333,7 +353,7 @@ section {
 /*PAGE 2 PRODUCTS*/
 .products-page {
 	width: 100%;
-	min-height: 755px;
+
 	background: url(images/background-page-2.png) top 0 left -20px / 105% 110% no-repeat;
 }
 .products-title {
@@ -343,7 +363,7 @@ section {
 }
 .products-page .wrapper {
 	
-	padding: 13% 6%;
+	padding: 13vw 6vh;
 	width: 88%;
 	display: flex;
 	justify-content: space-between;
@@ -400,18 +420,20 @@ section {
 	transition-duration: 0.5s;
 }
 .detail-window {
-	min-width: 38vw;
-	min-height: 34%;
+	position: relative;
+	min-width: 553px;
+	min-height: 34vh;
 	overflow: hidden;
 	border: 3px solid #FFFFFF;
 	border-radius: 20px;
 }
+
 .desc-wrap {
 	display: flex;
 	align-items: center;
 	padding: 55px 36px 36px 33px;
 	position: relative;
-	/*transform: translateX(1000px);*/
+
 }
 .text-block {
 	max-width: 280px;
@@ -462,6 +484,9 @@ section {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	z-index: 95;
+}
+form input, textarea {
+	outline: none;
 }
 .form-input {
 	box-sizing: border-box;
@@ -551,4 +576,3 @@ section {
 	background: url(icons/check-solid.svg) top 2px left 1px / 15px 15px no-repeat rgba(255, 255, 255, 0);
 	border-color: #D02B2B;
 }
-
