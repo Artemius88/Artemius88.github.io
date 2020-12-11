@@ -196,6 +196,9 @@ section {
 
 
 /*PAGE 1 MAIN*/
+.swiper-container {
+	height: 100vh;
+}
 .snowflakes {
 	width: 8px;
 	height: 8px;
@@ -286,6 +289,7 @@ section {
 	bottom: 35%;
 	right: 38%;
 	z-index: 0;
+	mix-blend-mode: 
 }
 .oval {
 	/*position: relative;*/
@@ -327,7 +331,7 @@ section {
 	position: absolute;
 	bottom: 7%;
 	left: 10%;
-	
+	cursor: pointer;
 	filter: invert(100%);
 	z-index: 202;
 }
@@ -493,8 +497,8 @@ form input, textarea {
 	background: rgba(0, 0, 0, 0);
 	border: 3px solid #FFFFFF;
 	border-radius: 15px;
-	height: 51px;
-	width: 47%;
+	height: 7vh;
+	width: 15vw;
 	color: #FFFFFF;
 	padding-left: 5%;
 	margin-bottom: 20px;
