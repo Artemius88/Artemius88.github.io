@@ -1,9 +1,14 @@
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
 	body {
 		width: 100%;
 		margin: 0;
 		padding: 0;
 		font-family: risque;
+	}
+	.section {
+		width: 100%;
+		margin: 0;
+		padding: 0;
 	}
 	.header {
 		position: fixed;
@@ -17,10 +22,22 @@
 		display: none;
 	}
 	#main-pg {
+		width: 100%;
 		position: relative;
-		min-height: 805px;
-		background: url(images/santa.png) bottom left -20% / 100% auto no-repeat;
+		margin: 0;
+		padding:0;
+		/*background: url(images/santa.png) bottom left 20% / 100% auto no-repeat;*/
+		background: url(images/santa.png) bottom center / 100% auto no-repeat;
+		/*background-size: cover;*/
+		/*background-image: none;*/
 	}
+	/*.background-santa {
+		position: absolute;
+		width: 80vw;
+		height: auto;
+		bottom: 0;
+		right: 10vw;
+	}*/
 	.scroll-arrow {
 		display: none;
 	}
@@ -47,7 +64,7 @@
 	
 	.burger-active-menu {
 		width: 100%;
-		height: 805px;
+		height: 100vh;
 		position: fixed;
 		right: -100%;
 		top: 0;
@@ -62,8 +79,9 @@
 		left: 0;
 		right: 0;
 		width: 100%;
-		max-height: 1239px;
-		background: url(images/pg2adaptive.png) no-repeat;
+		height: unset;
+		background: url(images/pg2adaptive.png) 100% no-repeat;
+		/*background-size: cover;*/
 		
 	}
 	.products-page .wrapper {
@@ -86,8 +104,11 @@
 		height: auto;
 	}
 	.detail-window {
-		width: 77%;
+		width: 77vw;
 		border: none;
+		
+	}
+	.desc-wrap {
 		display: flex;
 		flex-direction: column-reverse;
 		align-items: center;
@@ -101,7 +122,7 @@
 
 	#cont-page {
 		width: 100%;
-		min-height: 800px;
+		
 		background: url(images/pg3adaptive.png) no-repeat;
 	}
 	.form-wrapper {
@@ -113,6 +134,7 @@
 	}
 	.form-input, .gender-select, .form-input-textarea {
 		width: 88%;
+		
 	}
 }
 
