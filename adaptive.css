@@ -120,11 +120,11 @@
 		height: 25vw;		
 	}
 	.image img {
-		width: 60vw;
+		width: 60%;
 		height: auto;
 	}
 	.detail-window {
-		width: 77vw;
+		width: 77%;
 		border: none;
 		
 	}
