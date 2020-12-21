@@ -135,13 +135,15 @@
 		width: 88%;
 		bottom: 24%;
 	}
+	.form-wrapper textarea {
+		min-height: 60px
+	}
 	.form-container {
 		flex-direction: column;
 		
 	}
 	.form-input, .gender-select, .form-input-textarea {
 		width: 88%;
-
 	}
 		
 }
