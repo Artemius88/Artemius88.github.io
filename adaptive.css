@@ -129,6 +129,7 @@
 		width: 100vw;
 		
 		background: url(images/pg3adaptive.png) 100% no-repeat;
+		background: cover;
 	}
 	.form-wrapper {
 		width: 88%;
