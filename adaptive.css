@@ -136,7 +136,7 @@
 		bottom: 24%;
 	}
 	.form-wrapper textarea {
-		min-height: 60px
+		min-height: 80px;
 	}
 	.form-container {
 		flex-direction: column;
