@@ -81,7 +81,7 @@
 		display: none;
 	}
 	
-	/*.burger-active-menu {
+	.burger-active-menu {
 		width: 100vw;
 		height: 100vh;
 		position: fixed;
@@ -90,7 +90,7 @@
 	}
 	.burger-active-menu-slide {
 		transform: translateX(-100vw);
-	}*/
+	}
 
 		/*SECTION 2 PRODUCT-PAGE*/
 
