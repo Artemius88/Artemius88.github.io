@@ -132,7 +132,7 @@
 	}
 	.form-wrapper {
 		width: 88%;
-		
+		margin-bottom: 100px;
 	}
 	.form-container {
 		flex-direction: column;
