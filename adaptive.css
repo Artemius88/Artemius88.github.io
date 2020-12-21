@@ -5,7 +5,7 @@
 		padding: 0;
 		font-family: risque;
 		background-color: #141429;
-		overflow-x: none;
+		overflow-x: hidden;
 	}
 	section {
 		
@@ -126,12 +126,12 @@
 
 	#cont-page {
 		width: 100vw;
-		padding-bottom: 80px;
+		
 		background: url(images/pg3adaptive.png) 100% no-repeat;
 	}
 	.form-wrapper {
 		width: 88%;
-		margin-bottom: 80px;
+		
 	}
 	.form-container {
 		flex-direction: column;
