@@ -49,13 +49,13 @@
 		display: none;
 	}
 	#main-pg {
-		width: 100%;
+		width: 100vw;
 	}
 	#main-pg .wrapper {
 		position: absolute;
-		width: 100%;
+		width: 100vw;
 		max-height: 24%;
-		top: 27%;
+		top: 27vw;
 		text-align: center;
 	}
 	.main-title {
@@ -82,7 +82,7 @@
 		top: 0;
 	}
 	.burger-active-menu-slide {
-		transform: translateX(-100%);
+		transform: translateX(-100vw);
 	}
 
 		/*SECTION 2 PRODUCT-PAGE*/
@@ -90,7 +90,7 @@
 	#prod-page {
 		left: 0;
 		right: 0;
-		width: 100%;
+		width: 100vw;
 		padding: 0;
 		margin: 0;
 		height: unset;
@@ -106,10 +106,10 @@
 	}
 	.products-title {
 		display: block;
-		width: 90%;
+		width: 90vw;
 	}
 	.products-page .wrapper .images-container {
-		width: 90%;
+		width: 90vw;
 		display: flex;
 	}
 	.image {
@@ -117,7 +117,7 @@
 		height: 25vw;		
 	}
 	.image img {
-		width: 60%;
+		width: 60vw;
 		height: auto;
 	}
 	.detail-window {
@@ -140,19 +140,19 @@
 		/*PAGE 3 CONTACTS*/
 
 	#cont-page {
-		width: 100%;
+		width: 100vw;
 		
 		background: url(images/pg3adaptive.png) no-repeat;
 	}
 	.form-wrapper {
-		width: 88%;
+		width: 88vw;
 		margin-bottom: 80px;
 	}
 	.form-container {
 		flex-direction: column;
 	}
 	.form-input, .gender-select, .form-input-textarea {
-		width: 88%;
+		width: 88vw;
 
 	}
 }
