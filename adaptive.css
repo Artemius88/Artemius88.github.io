@@ -126,7 +126,7 @@
 
 	#cont-page {
 		width: 100vw;
-		height: unset;
+		padding-bottom: 80px;
 		background: url(images/pg3adaptive.png) no-repeat;
 	}
 	.form-wrapper {
@@ -135,7 +135,7 @@
 	}
 	.form-container {
 		flex-direction: column;
-		margin-bottom: 80px;
+		
 	}
 	.form-input, .gender-select, .form-input-textarea {
 		width: 88%;
