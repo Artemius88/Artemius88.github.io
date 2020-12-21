@@ -146,6 +146,15 @@
 	.form-input, .gender-select, .form-input-textarea {
 		width: 88%;
 	}
+	.select {
+		box-sizing: border-box;
+		width: 88%;
+		margin-bottom: 20px;
+		
+	}
+	div.select-styled {
+		padding: 5%;
+	}
 		
 }
 
