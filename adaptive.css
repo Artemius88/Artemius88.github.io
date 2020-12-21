@@ -48,6 +48,9 @@
 	.scroll-arrow {
 		display: none;
 	}
+	#main-pg {
+		width: 100%;
+	}
 	#main-pg .wrapper {
 		position: absolute;
 		width: 100%;
@@ -87,7 +90,7 @@
 	#prod-page {
 		left: 0;
 		right: 0;
-		width: 100vw;
+		width: 100%;
 		padding: 0;
 		margin: 0;
 		height: unset;
@@ -137,7 +140,7 @@
 		/*PAGE 3 CONTACTS*/
 
 	#cont-page {
-		width: 100vw;
+		width: 100%;
 		
 		background: url(images/pg3adaptive.png) no-repeat;
 	}
