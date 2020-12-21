@@ -7,7 +7,7 @@
 		background-color: #141429;
 		/*overflow: hidden;*/
 	}
-	.section {
+	body .section {
 		width: 100vw;
 		margin: 0;
 		padding: 0;
@@ -87,7 +87,7 @@
 		width: 100%;
 		height: unset;
 		background: url(images/pg2adaptive.png) 100% no-repeat;
-		background-size: cover;
+		
 		/*overflow: hidden;*/
 		/*padding-right: auto;*/
 	}
