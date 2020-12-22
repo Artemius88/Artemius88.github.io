@@ -574,7 +574,7 @@ form input, textarea {
 #present-checkbox:checked+label::before {
 	display: inline-block;
 
-	background: url(icons/check-solid.svg) top 2px left 1px / 15px 15px no-repeat rgba(255, 255, 255, 0);
+	background: url(icons/check-red.png) top 1px left 1px / 15px 15px no-repeat rgba(255, 255, 255, 1);
 	border-color: #D02B2B;
 }
 
