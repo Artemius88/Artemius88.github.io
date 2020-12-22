@@ -134,7 +134,7 @@
 	.form-wrapper {
 		width: 88%;
 		top: 15%;
-		bottom: 24%;
+		padding-bottom: 24vh;
 	}
 	.form-wrapper textarea {
 		min-height: 80px;
