@@ -158,13 +158,13 @@ section {
 
 /*ROUND-BURGER*/
 .slide-out-menu {
-	transform: translateX(-45vw);
+	transform: translateX(-55vw);
 	transition-duration: 1.3s;
 }
 
 .burger-round-menu {
 	position: absolute;
-	right: -30vw;
+	right: -40vw;
 	top: 25vh;
 	min-width: 120px;
 	display: flex;
