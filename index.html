@@ -35,7 +35,7 @@
 			<div class="burger-line burger-line-second"></div>
 			<div class="burger-line burger-line-third"></div>
 		</div>
-		<!-- <div class="round-burger"></div> -->
+		<div class="round-burger"></div>
 		<div class="burger-active-menu">
 			<a href="#main-pg">Main</a>
 			<a href="/">About</a>
@@ -43,12 +43,12 @@
 			<a href="#cont-page">Contacts</a>
 		</div>
 		
-		<!-- <div class="burger-round-menu">
+		<div class="burger-round-menu">
 			<a href="/">Main</a>
 			<a href="/">About</a>
 			<a href="/">Products</a>
 			<a href="/">Contacts</a>
-		</div> -->
+		</div>
 	</div>
 
 <!-- <div id="fullpage"> -->
@@ -87,7 +87,7 @@
 						<div class="scroll-arrow"><img src="icons/arrow-down-solid.svg" width="34" height="34">
 						</div>	
 					</div>
-					
+					<img src="images/santa.png" class="hidden" class="background-santa">
 				</section>
 			</div>
 			<div class="swiper-slide">
@@ -130,15 +130,22 @@
 								<input type="text" id=name name="name" placeholder="Name" class="form-input text-active">
 								<input type="text" id="phone" name="phone" placeholder="Phone" class="form-input text-active">			
 								
+								<!-- <div class="drop-container text-active form-input"> -->
 								<!-- CUSTOM SELECT -->
 									<select id="gen-drop" class="text-active">
 
 									    <option value="hide">Gender</option>
 									    <option value="Boy">Boy</option>
 									    <option value="Girl">Girl</option>
+									    <div class="chose-arrow"></div>
 									</select> 
+
+
+
 								<!-- CUSTOM SELECT -->
+
 								
+								<!-- </div> -->
 								<input type="text" name="email" id="email" placeholder="Email" class="form-input text-active">
 							</form>
 							<textarea name="your-wish" placeholder="Your wish" class="form-input-textarea text-active">
@@ -180,10 +187,10 @@
         // spaceBetween: 0,
         mousewheel: true,
         speed: 800,
+        // mySwiper: 
         pagination: {
           el: '.swiper-pagination',
           clickable: false,
-
         },
     });
 	</script>
