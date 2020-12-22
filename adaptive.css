@@ -84,6 +84,7 @@
 		margin: 0;
 		background: url(images/pg2adaptive.png) 100% no-repeat;	
 		height: unset;
+		background-size: cover;
 	}
 	#prod-page .wrapper {
 		position: relative;
