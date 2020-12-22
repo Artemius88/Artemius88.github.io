@@ -69,6 +69,10 @@
 	.burger-active-menu-slide {
 		transform: translateX(-100vw);
 	}
+	.round-burger {
+		top: 50px;
+		right: 50px;
+	}
 
 		/*SECTION 2 PRODUCT-PAGE*/
 
@@ -134,7 +138,7 @@
 	.form-wrapper {
 		width: 88%;
 		top: 15%;
-		padding-bottom: 24vh;
+		padding-bottom: 20vh;
 	}
 	.form-wrapper textarea {
 		min-height: 80px;
