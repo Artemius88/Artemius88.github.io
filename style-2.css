@@ -73,6 +73,7 @@ html, body, section {
 	transform: translateY(-19px);	
 }
 .burger {
+	position: relative;
 	background-color: #D02B2B;
 	width: 60px;
 	height: 60px;
@@ -85,6 +86,7 @@ html, body, section {
 	align-items: center;
 	z-index: 97;
 	transition-duration: 1.5s;
+	
 }
 .burger-roll {
 	transform: rotate(360deg);
@@ -108,7 +110,7 @@ html, body, section {
 .burger-active {
 	z-index: 100;
 	box-shadow: none;
-	overflow-x: hidden;
+	overflow: visible;
 }
 
 .hidden {
@@ -193,23 +195,50 @@ section {
 	line-height: 37px;
 	margin-bottom: 35px;
 } 
-.round-burger {
+/* .round-burger {
 	position: fixed;
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
 	background-color: #D02B2B;
-	/*transform: scale(0.9);*/
-    top: 70px;
-    right: 70px;
-    transition-duration: 2.1s;
-    overflow: visible;
-}
-.round-active {
-	transform: scale(150);
-    transition-duration: .7s;
-    	border-radius: 50%;
+        top: 70px;
+        right: 70px;
+        transition-duration: 2.1s;
+        overflow: visible;
+} */
 
+/* .round-active {
+	transform: scale(150);
+    	transition-duration: .7s;
+    	border-radius: 50%;
+} */
+.burger::after {
+	content: '';
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #D02B2B;
+    width: 0;
+    height: 0;
+    transition-duration: 2s;
+    border-radius: 50%;
+    z-index: -1;
+}
+.burger-active::after {
+	content: '';
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #D02B2B;
+    width: 220vh;
+    height: 220vh;
+    transition-duration: 2s;
+    border-radius: 50%;
+    z-index: -1;
 }
 
 
