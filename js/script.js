@@ -4,6 +4,7 @@ $(function() {
 	if ($(window).width() <= 450) {
 		$('.burger').on('click', () => {
 		$('.burger').toggleClass('burger-active');
+		$('.burger').toggleClass('burger-roll');
 		$('.burger-active-menu').toggleClass('burger-active-menu-slide');
 		console.log($('#prod-page').offset().top);
 		console.log($(window).scrollTop());
@@ -11,12 +12,13 @@ $(function() {
 	}
 	else {
 		// ROUND-BURGER-MENU
-		$('.burger').on('click', () => {
-	$('.burger').toggleClass('burger-active');
-	$('.round-burger').toggleClass('round-active');
-	$('.burger-round-menu').toggleClass('slide-out-menu');
+	$('.burger').on('click', () => {
+		$('.burger').toggleClass('burger-active');
+		$('.burger').toggleClass('burger-roll');
+		$('.round-burger').toggleClass('round-active');
+		$('.burger-round-menu').toggleClass('slide-out-menu');
 
-	
+
 	})
 	$('.burger').on('click', () => {
 		$('.burger-round-menu').toggleClass('hidden');
