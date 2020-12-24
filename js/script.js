@@ -15,7 +15,7 @@ $(function() {
 	$('.burger').on('click', () => {
 		$('.burger').toggleClass('burger-active');
 		$('.burger').toggleClass('burger-roll');
-		$('.round-burger').toggleClass('round-active');
+// 		$('.round-burger').toggleClass('round-active');
 		$('.burger-round-menu').toggleClass('slide-out-menu');
 
 
