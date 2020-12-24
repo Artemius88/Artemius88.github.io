@@ -86,6 +86,16 @@ html, body, section {
 	z-index: 97;
 	transition-duration: 1.5s;
 }
+.burger-roll {
+	transform: rotate(360deg);
+	transition-duration: 1s;
+	animation: scaleroll 1s ease-in-out;
+}
+@keyframes scaleroll {
+  	0% { transform: scale(1);  }
+  	50% { transform: scale(0.3);  }
+ 	100% { transform: scale(1);  }
+}
 
 .burger-line {
 	width: 34px;
