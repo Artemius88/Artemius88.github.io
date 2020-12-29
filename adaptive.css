@@ -138,9 +138,11 @@
 		background: cover;
 	}
 	.form-wrapper {
+		position: absolute;
 		width: 88%;
-		top: 15%;
-		padding-bottom: 20vh;
+		top: 50%;
+		transform: translateY(-50%);
+		
 	}
 	.form-wrapper textarea {
 		min-height: 80px;
