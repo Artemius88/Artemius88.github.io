@@ -133,6 +133,8 @@
 	#cont-page {
 		width: 100vw;
 		background: url(images/pg3adaptive.png) no-repeat;
+		background-size: cover;
+		background-position: center center;
 	}
 	.form-wrapper {
 		width: 88%;
