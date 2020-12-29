@@ -212,7 +212,7 @@ section {
     	transition-duration: .7s;
     	border-radius: 50%;
 } */
-.burger::after {
+.round-burger::after {
 	content: '';
     position: absolute;
     display: block;
