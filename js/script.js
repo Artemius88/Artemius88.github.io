@@ -11,7 +11,7 @@ $(function() {
 		console.log($(window).scrollTop());
 	})
 	}
-	else {
+	if ($(window).width() >= 450) {
 		// ROUND-BURGER-MENU
 	$('.burger').on('click', () => {
 		$('.burger').toggleClass('burger-active');
@@ -22,9 +22,6 @@ $(function() {
 		console.log('desktop');
 
 	})
-// 	$('.burger').on('click', () => {
-// 		$('.burger-round-menu').toggleClass('hidden');
-// 	})
 	}
 	
 
