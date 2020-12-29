@@ -19,7 +19,7 @@ $(function() {
 // 		$('.round-burger').toggleClass('round-active');
 		$('.burger-round-menu').toggleClass('slide-out-menu');
 		$('.burger-round-menu').toggleClass('hidden');
-
+		console.log('desktop');
 
 	})
 // 	$('.burger').on('click', () => {
