@@ -136,6 +136,7 @@
 		background-size: 100% auto;
 		background-position: center;
 		background: cover;
+		position: relative;
 	}
 	.form-wrapper {
 		position: absolute;
