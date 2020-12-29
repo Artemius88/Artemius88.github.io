@@ -212,7 +212,7 @@ section {
     	transition-duration: .7s;
     	border-radius: 50%;
 } */
-.round-burger::after {
+.burger::after {
 	content: '';
     position: absolute;
     display: block;
@@ -226,7 +226,7 @@ section {
     border-radius: 50%;
     z-index: -1;
 }
-.burger-active::after {
+.round-burger-active::after {
 	content: '';
     position: absolute;
     display: block;
