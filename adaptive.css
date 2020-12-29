@@ -163,6 +163,7 @@
 	}
 	div.select-styled {
 		padding: 5%;
+		padding-top: 0;
 	}
 		
 }
