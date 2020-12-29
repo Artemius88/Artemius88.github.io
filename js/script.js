@@ -11,9 +11,10 @@ $(function() {
 		console.log($(window).scrollTop());
 	})
 	}
-	if ($(window).width() >= 450) {
+	else {
 		// ROUND-BURGER-MENU
 	$('.burger').on('click', () => {
+		$('.burger').toggleClass('round-burger-active');
 		$('.burger').toggleClass('burger-active');
 		$('.burger').toggleClass('burger-roll');
 // 		$('.round-burger').toggleClass('round-active');
