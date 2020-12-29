@@ -6,6 +6,7 @@ $(function() {
 		$('.burger').toggleClass('burger-active');
 		$('.burger').toggleClass('burger-roll');
 		$('.burger-active-menu').toggleClass('burger-active-menu-slide');
+			$('.burger-round-menu').toggleClass('hidden');
 		console.log($('#prod-page').offset().top);
 		console.log($(window).scrollTop());
 	})
@@ -20,9 +21,9 @@ $(function() {
 
 
 	})
-	$('.burger').on('click', () => {
-		$('.burger-round-menu').toggleClass('hidden');
-	})
+// 	$('.burger').on('click', () => {
+// 		$('.burger-round-menu').toggleClass('hidden');
+// 	})
 	}
 	
 
