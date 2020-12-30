@@ -87,6 +87,7 @@ html, body, section {
 	z-index: 97;
 	transition-duration: 1.5s;
 	justify-self: flex-end;
+	right: -8vw;
 }
 .burger-roll {
 	transform: rotate(360deg);
