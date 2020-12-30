@@ -101,12 +101,13 @@
 	.products-page .wrapper .images-container {
 		width: 90%;
 		display: flex;
-		flex-shrink: 0;
 	}
 	.image {
 		position: relative;
 		width: 25vw;
-		height: 25vw;		
+		height: 25vw;	
+		flex-shrink: 0;
+   		margin-left: -15px;
 	}
 	.image img {
 		width: 60%;
