@@ -126,6 +126,7 @@
 	.zoomed-image {
 		max-height: 240px;
 		max-width: 240px;
+		min-height: 230px;
 	}
 
 		/*PAGE 3 CONTACTS*/
