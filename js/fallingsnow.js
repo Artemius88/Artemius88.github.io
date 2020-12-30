@@ -7,7 +7,7 @@
 
         snowflake.css({'left':snowX+'px', 'opacity': '0.6', 'z-index': '1'});
         snowflake.animate({
-            top: "2250px",
+            top: $( document ).height(),
             opacity : "0.3 "
 
         }, snowSpd, function(){
