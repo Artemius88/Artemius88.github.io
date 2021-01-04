@@ -133,8 +133,12 @@ $('select').each(function(){
 });
 /*<!-- CUSTOM SELECT -->*/
 	
+	$('a').on('click', (event) => {
+		event.preventDefault();
+	});
+	
 			// NAV-MENU-SLIDER-CLICK
-	const headerLinks = document.getElementsByClassName( "nav-menu-item" );	
+	const headerLinks = document.getElementsByClassName( "nav-menu-item-slide" );	
 	const navHeader = $.makeArray(headerLinks);
 	 
 		for (let i = 0; i < navHeader.length; i++) {
