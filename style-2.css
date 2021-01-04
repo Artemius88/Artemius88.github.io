@@ -92,7 +92,7 @@ html, body, section {
 .burger-roll {
 	transform: rotate(360deg);
 	transition-duration: 1s;
-	animation: scaleroll 1s ease-in-out;
+	animation: scaleroll 1s ease;
 }
 @keyframes scaleroll {
   	0% { transform: scale(1);  }
