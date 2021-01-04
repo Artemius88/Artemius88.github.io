@@ -19,7 +19,7 @@ $(function() {
 		$('.burger').toggleClass('burger-roll');
 // 		$('.round-burger').toggleClass('round-active');
 		$('.burger-round-menu').toggleClass('slide-out-menu');
-		$('.burger-round-menu').toggleClass('hidden');
+// 		$('.burger-round-menu').toggleClass('hidden');
 		console.log('desktop');
 
 	})
@@ -32,7 +32,7 @@ $(function() {
 
 	$('.oval').hide().delay(3000).fadeIn(0);
 	$('.triangle').hide().delay(3000).fadeIn(0);
-	$('.burger-round-menu').addClass('hidden');
+// 	$('.burger-round-menu').addClass('hidden');
 
 		// ARROW-NEXT-PAGE
 
