@@ -132,6 +132,52 @@ $('select').each(function(){
 
 });
 /*<!-- CUSTOM SELECT -->*/
+	
+			// NAV-MENU-SLIDER-CLICK
+	const headerLinks = document.getElementsByClassName( "nav-menu-item" );	
+	const navHeader = $.makeArray(headerLinks);
+	 
+		for (let i = 0; i < navHeader.length; i++) {
+			$(navHeader[i]).on('click', (event) => {
+				event.preventDefault();
+				swiper.slideTo(i, 800);
+				console.log(i);
+			})
+	 	};
+
+
+	 		// SLIDER-ROUND-MENU-ITEM-CLICK
+	const sideLinks = document.getElementsByClassName("slide-menu-item");	
+	const navSide = $.makeArray(sideLinks); 
+		for (let i = 0; i < navSide.length; i++) {
+			$(navSide[i]).on('click', (event) => {
+				event.preventDefault();
+				swiper.slideTo(i, 800);
+				console.log(i);
+				$('.burger').removeClass('round-burger-active');
+				$('.burger').removeClass('burger-active');
+				$('.burger').removeClass('burger-roll');
+				$('.burger-round-menu').removeClass('slide-out-menu');
+
+			})
+	 	};		
+
+
+	 		// MOBILE-MENU-ITEM-SLIDER-CLICK
+	const mobLinks = document.getElementsByClassName("mob-menu-item");	
+	const mobSide = $.makeArray(mobLinks); 	
+	const secArr = ['#main-pg', '#prod-page', '#cont-page'];
+		for (let i = 0; i < mobSide.length; i++) {
+			$(mobSide[i]).on('click', (event) => {
+				event.preventDefault();
+					$('html, body').animate({
+	       				 scrollTop: $(secArr[i]).offset().top}, 800);
+	    		$('.burger').removeClass('burger-active');
+				$('.burger').removeClass('burger-roll');
+				$('.burger-active-menu').removeClass('burger-active-menu-slide');
+
+			})
+	 	};	
 
 })
 	
